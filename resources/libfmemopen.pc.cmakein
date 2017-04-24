@@ -1,0 +1,15 @@
+# @EDIT_WARNING@
+
+# FIXME: add author and license information
+
+prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libfmemopen
+Description: C wrapper around BSD funopen() to emulate Linux fmemopen()
+URL: https://github.com/mprzybylski/darwin-fmemopen
+Version: @FMEMOPEN_BUILD_VER@
+Cflags: -I${includedir}
+Libs: -L${libdir} -lfmemopen
+
